@@ -1,0 +1,93 @@
+/*复选框样式*/
+input[type="checkbox"]{
+	visibility: hidden;
+}
+.checkbox-wrap{
+	position: relative;
+	width: 15px;
+	height: 15px;
+}
+.checkbox-wrap>label{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: #fff;
+	border: 1px solid #ddd;
+}
+.checkbox-wrap input[type="checkbox"]:checked + label{
+	background: url(../img/check.png) center no-repeat;
+	background-size: contain;
+}
+/*复选框样式*/
+
+/*单选框样式*/
+input[type="radio"]{
+	visibility: hidden;
+}
+.radio-wrap{
+	position: relative;
+	display: inline-block;
+	width: 15px;
+	height: 15px;
+}
+.radio-wrap>label{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 15px;
+	height: 15px;
+	line-height: 10px;
+	text-align: center;
+	background: #eee;
+	border: 1px solid #ddd;
+	border-radius: 50%;
+	cursor: pointer;
+}
+.radio-dot{
+	display: none;
+	width: 6px;
+	height: 6px;
+	background-color: #666;
+	border-radius: 50%;
+}
+.radio-wrap input[type="radio"]:checked + label>.radio-dot{
+	display: inline-block;
+}
+/*单选框样式*/
+
+/*下拉框样式*/
+.select-wrap{
+	position: relative;
+	width: 120px;
+	height: 28px;
+	padding-left: 5px;
+	padding-right: 20px;
+	line-height: 30px;
+	border: 1px solid #D5D4D4;
+}
+.arrow-down{
+	display: inline-block;
+	border-top: 5px solid #828282;
+	border-right: 5px solid transparent;
+	border-left: 5px solid transparent;
+}
+.select-wrap>.arrow-down{
+	position: absolute;
+	right: 5px;
+	top: 12px;
+}
+.select{
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 2;
+	width: 145px;
+	height: 30px;
+	margin: 0;
+	padding: 0;
+	opacity: 0;
+	filter: alpha(opacity=0);
+}
+/*下拉框样式*/

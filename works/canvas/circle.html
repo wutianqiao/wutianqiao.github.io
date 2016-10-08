@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Canvas-绘制弧和圆</title>
+<style>
+	
+</style>
+</head>
+<body>
+    <canvas id="canvas">
+    	当前浏览器不支持Canvas，请更换浏览器后再试
+    </canvas>
+    <script>
+    	/**
+    	 context.arc(
+    		centerx, centery, radius, // 圆心的位置，半径
+    		startingAngel, endingAngel, // 弧线从哪一个弧度值开始到哪个弧度值
+    		anticlockwise = false // 按顺时针还是逆时针方向绘制，默认false为顺时针方向
+    		)
+    	 */
+    	
+    	window.onload = function() {
+    		var canvas = document.getElementById("canvas");
+    		canvas.width = 1024;
+    		canvas.height = 768;
+    		var context = canvas.getContext("2d");
+
+    		context.lineWidth = 5;
+    		context.strokeStyle = "#005588";
+    		
+    		for (var i =0; i < 10; i++) {
+    			context.beginPath();
+    			context.arc(50 + i*100, 60, 40, 0, 2*Math.PI*(i+1)/10);
+    			context.closePath();  // 会自动将不封闭的路径的首尾用一条线段连接起来
+
+    			context.stroke();
+    		}
+
+    		/*不封闭的弧线*/
+    		for (var i =0; i < 10; i++) {
+    			context.beginPath();
+    			context.arc(50 + i*100, 160, 40, 0, 2*Math.PI*(i+1)/10);
+
+    			context.stroke();
+    		} 
+    		 
+    		context.fillStyle = "#005588";
+    		
+    		/*逆时针绘制*/
+    		for (var i =0; i < 10; i++) {
+    			context.beginPath();
+    			context.arc(50 + i*100, 260, 40, 0, 2*Math.PI*(i+1)/10, true);
+				context.closePath();
+
+    			context.stroke();
+    			context.fill(); 
+    		} 
+    		
+			/*逆时针绘制，不封闭*/
+    		for (var i =0; i < 10; i++) {
+    			context.beginPath();
+    			context.arc(50 + i*100, 360, 40, 0, 2*Math.PI*(i+1)/10,true);
+
+    			context.stroke();
+    			context.fill(); 
+    		} 		
+    	}
+    </script>
+</body>
+</html>
