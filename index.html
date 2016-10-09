@@ -3,145 +3,263 @@
 <head>
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-<title>resume</title>
-<link rel="stylesheet" href="css/index.css">
+<title>吴天乔的个人主页</title>
+<link rel="stylesheet" href="css/main.css">
 <link rel="stylesheet" href="css/font-awesome-4.6.3/css/font-awesome.min.css">
 </head>
 <body>
-	<div id="header">
-		<div class="layout table">
-			<div class="vertical-center">
-				<h1>吴天乔的个人主页</h1>
-				<p>Welcome to my wold !</p>
-				<a class="btn2" href="">查看更多</a>
+		<div id="header">
+			<div class="header-top">
+				<div class="layout clearfix">
+					<a class="header-logo" href="#">WTQ</a>
+					<ul class="header-nav">
+						<li>
+							<a href="#">HOME</a>
+						</li>
+						<li>
+							<a href="#ability">ABILITY</a>
+						</li>
+						<li>
+							<a href="#works">WORKS</a>
+						</li>
+						<li>
+							<a href="#history">HISTORY</a>
+						</li>
+						<li>
+							<a href="#footer">CONTACT</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="header-main table">
+				<div class="layout vertical-center">
+					<h1 class="header-lead-in">吴天乔——web前端开发工程师</h1>
+					<h2 class="header-heading">Welcome To My World!</h2>
+					<a class="btn btn-xl" href="#content">查看更多</a>
+				</div>
 			</div>
 		</div>
-	</div>    
-	<div id="content">
-		<div class="introduce">
+		<div id="content">
+			<!-- 技能 -->
+			<div id="ability" class="ability">
+				<div class="layout ">
+					<h2 class="content-heading">技能</h2>
+					<hr>
+					<ul class="ability-wrap clearfix">
+						<li class="ability-item">
+							<a class="icon" href="#works">
+								<span class="fa fa-code"></span>
+							</a>
+							<h3 class="title">HTML&CSS</h3>
+							<p class="ability-desp">掌握浮动、定位、盒模型、BFC等CSS核心概念，掌握常见布局方式，对代码可读性、规范性、语义化有一定认识，对CSS兼容有一定经验，能熟练开发符合W3C规范的常见页面</p>
+							<a class="btn btn-l" href="#works">相关作品</a>
+						</li>
+						<li class="ability-item">
+							<a class="icon" href="#works">
+								<span class="fa fa-cogs"></span>
+							</a>
+							<h3 class="title">JS&JQuery</h3>
+							<p class="ability-desp">掌握事件模型、DOM操作、Ajax、JSONP、跨域、闭包、原型链、继承等相关概念的原理和使用方法，能用原生JS封装通用函数库，实现诸如轮播、Tab切换卡、懒加载、Dialog、表单验证、Ajax等常见效果。<br>熟练使用jQuery开发常见页面的效果，能够将常见效果封装成jQuery插件</p>
+							<a class="btn btn-l" href="#works">相关作品</a>
+						</li>
+						<li class="ability-item">
+							<a class="icon" href="#works">
+								<span class="fa fa-list"></span>
+							</a>
+							<h3 class="title">项目</h3>
+							<p class="ability-desp">
+							e亩农场线上代种养平台<br>
+							网页版个人主页
+							</p>
+							<a class="btn btn-l" href="http://www.emunongchang.com/" target="_blank">我的项目</a>
+						</li>
+						<li class="ability-item">
+							<a class="icon" href="#">
+								<span class="fa fa-leaf"></span>
+							</a>
+							<h3 class="title">个人博客</h3>
+							<p class="ability-desp">前端学习笔记的总结，对html、css、js等基础知识及常见问题做了一些整理</p>
+							<a class="btn btn-l" href="http://www.jianshu.com/users/4f4aed20c7bd/latest_articles" target="_blank">查看博客</a>
+						</li>
+
+					</ul>
+				</div>
+			</div>
+			<!-- 作品 -->
+			<div id="works" class="works">
+				<div class="layout">
+					<h2 class="content-heading">作品</h2>
+					<hr>
+					<ul class="works-wrap clearfix">
+						<li>
+							<a class="works-link" href="http://www.emunongchang.com/" target="_blank">
+								<div class="works-hover">
+									<span class="fa fa-plus"></span>
+								</div>
+								<img src="images/roundicons.png" alt="">
+							</a>
+							<div class="works-caption">
+								<h3>社交型电商平台</h3>
+							</div>
+						</li>
+						<li>
+							<a class="works-link" href="works/csseffect/form/form.html" target="_blank">
+								<div class="works-hover">
+									<span class="fa fa-plus"></span>
+								</div>
+								<img src="images/roundicons.png" alt="">
+							</a>
+							<div class="works-caption">
+								<h3>自定义复选框、单选框、select样式</h3>
+							</div>
+						</li>
+						<li>
+							<a class="works-link" href="works/csseffect/tooltip.html">
+								<div class="works-hover">
+									<span class="fa fa-plus"></span>
+								</div>
+								<img src="images/roundicons.png" alt="">
+							</a>
+							<div class="works-caption">
+								<h3>带三角形提示框</h3>
+							</div>
+						</li>
+						<li>
+							<a class="works-link" href="works/csseffect/heart.html">
+								<div class="works-hover">
+									<span class="fa fa-plus"></span>
+								</div>
+								<img src="images/roundicons.png" alt="">
+							</a>
+							<div class="works-caption">
+								<h3>跳动的爱心</h3>
+							</div>
+						</li>
+						<li>
+							<a class="works-link" href="works/canvas/tangram.html">
+								<div class="works-hover">
+									<span class="fa fa-plus"></span>
+								</div>
+								<img src="images/roundicons.png" alt="">
+							</a>
+							<div class="works-caption">
+								<h3>Canvas绘制七巧板</h3>
+							</div>
+						</li>
+						<li>
+							<a class="works-link" href="works/canvas/clock/index.html">
+								<div class="works-hover">
+									<span class="fa fa-plus"></span>
+								</div>
+								<img src="images/roundicons.png" alt="">
+							</a>
+							<div class="works-caption">
+								<h3>酷炫的Canvas计时器</h3>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<!-- 工作经历 -->
+			<div id="history" class="history">
+				<div class="layout">
+					<h2 class="content-heading">工作经历</h2>
+					<hr>
+					<ul class="timeline">
+						<li>
+							<div class="timeline-image">
+								<img src="images/1.jpg" alt="">
+							</div>
+							<div class="timeline-panel">
+								<h3>2015.03-2015.06</h3>
+								<h3>武汉威骏进出口贸易有限公司</h3>
+								<h3>web前端开发工程师</h3>
+								<p class="timeline-body">
+									1.负责公司三个部门网站及三个阿里旺铺的后台操作管理，包括添加、修改、删除商品图片，修改阿里平台部分版块内容等；<br>
+									2.SEO优化公司网站，包括添加内链、图片描述（alt属性）、sitemap、Robots协议等；<br>
+									3.用HTML、CSS、js设计开发静态网站；<br>
+									4.配置iis服务器，能让其他员工内部浏览静态网站。
+								</p>
+							</div>
+						</li>
+						<li class="timeline-inverted">
+							<div class="timeline-image">
+								<img src="images/2.jpg" alt="">
+							</div>
+							<div class="timeline-panel">
+								<h3>2015.08-至今</h3>
+								<h3>深圳鸿福轩生命科学研究与发展有限公司</h3>
+								<h3>web前端开发工程师</h3>
+								<p class="timeline-body">
+									1.参与项目前期需求的讨论，并编写需求文档；<br>
+									2.用html、css重构O2O+SNS平台网站；<br>
+									3.用js、jQuery对平台页面进行交互式设计开发，ajax实现前后台数据交互；<br>
+									4.主导申请软件著作权；<br>
+									5.编写可行性研究报告；<br>
+									6.申请微信公众号；<br>
+									7.搭建微信商城；<br>
+									8.申请微信、支付宝支付等第三方登录接口，及微信、QQ等第三方登录接口；<br>
+									9.协助招聘其他技术、市场人员；<br>
+									10.参加企业管理培训，并协助制作企业管理方案。
+								</p>
+							</div>
+						</li>
+						<li>
+							<div class="timeline-image">
+								<h3>
+									THE NEXT
+									<br>
+									WILL BE
+									<br>
+									？？？
+								</h3>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div id="footer">
 			<div class="layout">
-				<h2>这里是一个标题</h2>
-				<p class="introduce-con">
-					关于我的简介
-					<a href="">作品</a>
-				</p>
-			</div>
-		</div>
-		<div class="ability">
-			<div class="layout ">
-				<h2>技能</h2>
-				<hr>
-				<ul class="ability-wrap clearfix">
-					<li class="ability-item">
-						<a class="icon" href="#">
-							<span class="fa fa-code"></span>
-						</a>
-						<h3 class="title">HTML&CSS</h3>
-						<p class="ability-desp">html css相关技能，比如……</p>
-						<a class="btn1" href="">相关作品</a>
+				<h4>联系方式</h4>
+				<p class="address">广东省深圳市</p>
+				<ul class="contact-information">
+					<li>
+						<span class="fa fa-phone"></span>18576681090
 					</li>
-					<li class="ability-item">
-						<a class="icon" href="#">
-							<span class="fa fa-cogs"></span>
-						</a>
-						<h3 class="title">JS&JQuery</h3>
-						<p class="ability-desp">JS相关组件、插件，比如……</p>
-						<a class="btn1" href="">相关作品</a>
-					</li>
-					<li class="ability-item">
-						<a class="icon" href="#">
-							<span class="fa fa-list"></span>
-						</a>
-						<h3 class="title">项目</h3>
-						<p class="ability-desp">比如XXX，XXX，XXX</p>
-						<a class="btn1" href="">我的项目</a>
-					</li>
-					<li class="ability-item">
-						<a class="icon" href="#">
-							<span class="fa fa-leaf"></span>
-						</a>
-						<h3 class="title">个人博客</h3>
-						<p class="ability-desp">学习历程总结，比如，做了什么……</p>
-						<a class="btn1" href="">查看博客</a>
+					<li>
+						<span class="fa fa-envelope"></span>
+						<a href="mailto:tianqiaow@gmail.com">tianqiaow@gmail.com</a>
 					</li>
 				</ul>
-			</div>
-		</div>
-		<div class="callout">
-			<div class="layout">
-				<h2>Difficulties vanish when faced boldly.</h2>
-			</div>
-		</div>
-		<div class="works">
-			<div class="layout">
-				<h2>我的作品</h2>
-				<hr>
-				<ul class="works-wrap clearfix">
-					<li class="works-item">
-						<a href="">
-							<img src="images/portfolio-1.jpg" alt="">
+				<ul class="sns">
+					<li class="sns-item">
+						<a href="https://github.com/wutianqiao" target="_blank">
+							<span class="fa fa-github"></span>
 						</a>
 					</li>
-					<li class="works-item">
-						<a href="">
-							<img src="images/portfolio-1.jpg" alt="">
+					<li class="sns-item">
+						<a>
+							<span class="fa fa-weixin"></span>
 						</a>
+						<div class="qrcode-wrap">
+							<img src="images/QRcode-weixin.png" alt="">
+							<p>扫一扫加微信</p>
+						</div>
 					</li>
-					<li class="works-item">
-						<a href="">
-							<img src="images/portfolio-1.jpg" alt="">
+					<li class="sns-item">
+						<a>
+							<span class="fa fa-qq"></span>
 						</a>
-					</li>
-					<li class="works-item">
-						<a href="">
-							<img src="images/portfolio-1.jpg" alt="">
-						</a>
+						<div class="qrcode-wrap">
+							<img src="images/QRcode-QQ.jpg" alt="">
+							<p>扫一扫加QQ</p>
+						</div>
 					</li>
 				</ul>
-				<a class="btn2" href="">更多作品</a>
+				<hr>
+				<p>Copyright © WTQ 2016</p>
 			</div>
 		</div>
-		<div class="other">
-			<div class="layout">
-				<h2 class="title">我是一个聪明勤奋的人</h2>
-				<a class="btn1" href="">Click Me!</a>
-				<a class="btn2" href="">Look at Me!</a>
-			</div>
-		</div>
-	</div>
-	<div id="footer">
-		<div class="layout">
-			<h4>我的信息</h4>
-			<p class="address">广东省深圳市</p>
-			<ul class="contact-information">
-				<li>
-					<span class="fa fa-phone"></span>(123)456-7890
-				</li>
-				<li>
-					<span class="fa fa-envelope"></span>
-					<a href="">yic.wtq@qq.com</a>
-				</li>
-			</ul>
-			<ul class="sns">
-				<li class="sns-item">
-					<a href="">
-						<span class="fa fa-github"></span>
-					</a>
-				</li>
-				<li class="sns-item">
-					<a href="">
-						<span class="fa fa-weixin"></span>
-					</a>
-				</li>
-				<li class="sns-item">
-					<a href="">
-						<span class="fa fa-qq"></span>
-					</a>
-				</li>
-			</ul>
-			<hr>
-			<p>Copyright © WTQ 2016</p>
-		</div>
-	</div>
 </body>
 </html>
